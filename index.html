@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo Trail — 다운로드</title>
+  <meta name="description" content="Echo Trail — 과거의 나를 피하는 원히트 서바이벌 아케이드. App Store와 Google Play에서 무료 다운로드." />
+
+  <!-- Open Graph (인스타/SNS 공유 미리보기) -->
+  <meta property="og:title" content="Echo Trail" />
+  <meta property="og:description" content="과거의 나를 피하는 원히트 서바이벌 아케이드. 지금 무료 다운로드." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: radial-gradient(circle at 50% 30%, #16163a 0%, #0a0a1a 70%);
+      color: #ffffff;
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    .logo {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 24px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #00ffaa, #00ddff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 40px rgba(0, 255, 170, 0.35);
+    }
+    .logo svg { width: 52px; height: 52px; }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #aab0c8;
+      margin-bottom: 36px;
+    }
+    .buttons { display: flex; flex-direction: column; gap: 14px; }
+    .store-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: #1a1a2e;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .store-btn:hover { transform: translateY(-2px); }
+    .store-btn svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .store-btn .label { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
+    .store-btn .label small { font-size: 11px; font-weight: 500; color: #8b91a8; }
+    /* 현재 기기에 맞는 버튼 강조 */
+    .store-btn.primary {
+      border-color: #00ffaa;
+      box-shadow: 0 0 24px rgba(0, 255, 170, 0.25);
+      background: #14233a;
+    }
+    .footer {
+      margin-top: 36px;
+      font-size: 12px;
+      color: #6b7088;
+    }
+    .footer a { color: #8b91a8; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo" aria-hidden="true">
+      <!-- 우주선 아이콘 (간단한 삼각형 형태) -->
+      <svg viewBox="0 0 24 24" fill="#0a0a1a"><path d="M12 2 L20 20 L12 15 L4 20 Z"/></svg>
+    </div>
+
+    <h1>Echo Trail</h1>
+    <p class="tagline">과거의 나(에코)를 피하는<br>원히트 서바이벌 아케이드</p>
+
+    <div class="buttons" id="buttons">
+      <!-- App Store -->
+      <a class="store-btn" id="appstore" href="https://apps.apple.com/app/id6768566723">
+        <svg viewBox="0 0 24 24" fill="#ffffff"><path d="M16.365 1.43c0 1.14-.42 2.2-1.12 2.98-.84.94-2.2 1.66-3.34 1.57-.14-1.12.41-2.3 1.07-3.04.74-.84 2.05-1.46 3.1-1.5.02.1.03.2.03.3.26-.26.26-.31.26-.31zM20.7 17.1c-.5 1.14-.74 1.65-1.38 2.66-.9 1.41-2.17 3.16-3.74 3.17-1.4.02-1.76-.92-3.66-.91-1.9.01-2.3.93-3.7.91-1.57-.01-2.77-1.6-3.67-3-2.52-3.94-2.79-8.56-1.23-11.01 1.1-1.74 2.85-2.76 4.5-2.76 1.67 0 2.72.92 4.1.92 1.34 0 2.16-.92 4.09-.92 1.46 0 3.01.8 4.11 2.17-3.62 1.98-3.02 7.13.18 8.78z"/></svg>
+        <span class="label"><small>다운로드</small>App Store</span>
+      </a>
+
+      <!-- Google Play -->
+      <a class="store-btn" id="playstore" href="https://play.google.com/store/apps/details?id=com.sjunx.echotrail">
+        <svg viewBox="0 0 24 24"><path fill="#00d2ff" d="M3.6 2.3 13 11.7 3.6 21.1c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#00f076" d="M13 11.7 3.6 2.3c.1-.1.3-.1.5-.1.3 0 .6.1.9.3l8.9 5.1-1 4.1z"/><path fill="#ffce00" d="m17 8.9 2.7 1.5c.9.5.9 1.8 0 2.3L17 14.2l-1.7-1.5L17 8.9z"/><path fill="#ff3a44" d="M13 11.7 3.6 21.1c.3.2.6.3.9.3.2 0 .4 0 .5-.1l8-4.6 1-5z"/></svg>
+        <span class="label"><small>다운로드</small>Google Play</span>
+      </a>
+    </div>
+
+    <p class="footer">
+      © Echo Trail · <a href="https://seojun381.github.io/echo-trail-privacy/">개인정보처리방침</a>
+    </p>
+  </main>
+
+  <script>
+    // 기기 종류 감지 → 맞는 스토어 버튼을 위로 + 강조
+    (function () {
+      var ua = navigator.userAgent || navigator.vendor || "";
+      var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+      var box = document.getElementById("buttons");
+      var appstore = document.getElementById("appstore");
+      var playstore = document.getElementById("playstore");
+
+      if (isIOS) {
+        appstore.classList.add("primary");
+        box.insertBefore(appstore, playstore);
+      } else if (isAndroid) {
+        playstore.classList.add("primary");
+        box.insertBefore(playstore, appstore);
+      }
+    })();
+  </script>
+</body>
+</html>
